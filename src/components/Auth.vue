@@ -78,7 +78,7 @@ export default {
   },
   computed: {
     ...mapState({
-      authModalShow: (state) => state.auth.authModuleShow,
+      authModalShow: (state) => state.auth.authModalShow,
     }),
     // authModalShow() {
     //   return this.$store.getters.authModalShow;
