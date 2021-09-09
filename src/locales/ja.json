@@ -1,0 +1,17 @@
+{
+  "home": {
+    "desc": "Sekaijū no shinkō oyobi shuyōna ātisuto no ongaku no taezu kakudai suru mikkusu o hakken, sutorīmingu, kyōyū shimasu.",
+    "listen": "Subarashī ongaku o kikimashou!",
+    "songs": "Uta"
+  },
+  "manage": {
+    "my_songs": "Watashi no uta"
+  },
+  "register": {
+    "TOS": "riyō kiyaku",
+    "accept": "Vuesic Cloud no {0} ni dōi shimasu."
+  },
+  "song": {
+    "comment_count": "Komento wa arimasen | 1 komento | {count} komento"
+  }
+}

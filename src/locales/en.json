@@ -1,0 +1,17 @@
+{
+  "home": {
+    "desc": "Discover, stream, and share a constantly expanding mix of music from emerging and major artists around the world.",
+    "listen": "Listen to Great Music!",
+    "songs": "Songs"
+  },
+  "manage": {
+    "my_songs": "My Songs"
+  },
+  "register": {
+    "TOS": "Terms of Service",
+    "accept": "I accept Vuesic Cloud's {0}."
+  },
+  "song": {
+    "comment_count": "No comments | 1 Comment | {count} Comments"
+  }
+}

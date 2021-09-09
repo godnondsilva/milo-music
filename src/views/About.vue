@@ -1,5 +1,15 @@
 <template>
-  <div class="about">
+  <main>
     <h1>This is an about page</h1>
-  </div>
+  </main>
 </template>
+
+<script>
+// import dummyModule from '@/store/modules/dummy';
+
+// export default {
+//   created() {
+//     this.$store.registerModule('dummy', dummyModule);
+//   },
+// };
+</script>

@@ -1,4 +1,4 @@
-# music
+# Vuesic Player
 
 ## Project setup
 ```
