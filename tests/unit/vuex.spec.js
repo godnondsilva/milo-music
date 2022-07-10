@@ -4,51 +4,51 @@ import player from '@/store/modules/player';
 import { cloneDeep } from 'lodash';
 
 jest.mock('@/includes/firebase', () => ({
-  auth: () => {},
+	auth: () => {},
 }));
 jest.mock('firebase/auth', () => ({
-  signInWithEmailAndPassword: () => Promise.resolve(),
+	signInWithEmailAndPassword: () => Promise.resolve(),
 }));
 
 describe('Vuex Store', () => {
-  it('toggleAuth mutation sets userLoggedIn to true', () => {
-    const clonedAuth = cloneDeep(auth);
+	it('toggleAuth mutation sets userLoggedIn to true', () => {
+		const clonedAuth = cloneDeep(auth);
 
-    const store = createStore({
-      modules: {
-        auth: clonedAuth,
-      },
-    });
+		const store = createStore({
+			modules: {
+				auth: clonedAuth,
+			},
+		});
 
-    expect(store.state.auth.userLoggedIn).not.toBe(true);
-    store.commit('toggleAuth');
-    expect(store.state.auth.userLoggedIn).toBe(true);
-  });
+		expect(store.state.auth.userLoggedIn).not.toBe(true);
+		store.commit('toggleAuth');
+		expect(store.state.auth.userLoggedIn).toBe(true);
+	});
 
-  it('login action sets userLoggedIn to true', async () => {
-    expect.assertions(2);
+	it('login action sets userLoggedIn to true', async () => {
+		expect.assertions(2);
 
-    const clonedAuth = cloneDeep(auth);
+		const clonedAuth = cloneDeep(auth);
 
-    const store = createStore({
-      modules: {
-        auth: clonedAuth,
-      },
-    });
+		const store = createStore({
+			modules: {
+				auth: clonedAuth,
+			},
+		});
 
-    expect(store.state.auth.userLoggedIn).toBe(false);
-    await store.dispatch('login', { email: '', password: '' });
-    expect(store.state.auth.userLoggedIn).toBe(true);
-  });
+		expect(store.state.auth.userLoggedIn).toBe(false);
+		await store.dispatch('login', { email: '', password: '' });
+		expect(store.state.auth.userLoggedIn).toBe(true);
+	});
 
-  it('playing return true if audio is playing', () => {
-    const state = {
-      sound: {
-        playing: () => true,
-      },
-    };
+	it('playing return true if audio is playing', () => {
+		const state = {
+			sound: {
+				playing: () => true,
+			},
+		};
 
-    const result = player.getters.playing(state);
-    expect(result).toEqual(true);
-  });
+		const result = player.getters.playing(state);
+		expect(result).toEqual(true);
+	});
 });

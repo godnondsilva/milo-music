@@ -12,12 +12,10 @@
           @click.prevent="(currentSong.url === song.url) ? toggleAudio() : newSong(song)">
           <!-- Show play icon if the player is not playing OR song is not playing in this page -->
           <!-- Show pause icon if the player is playing AND song is playing in current page -->
-          <i
-          class="fa text-blue-400 text-xl"
-          :class="{
+          <i class="fa text-blue-400 text-xl" :class="{
             'fa-play': (!playing || currentSong.url !== song.url),
-            'fa-pause': (playing && currentSong.url === song.url) }"
-          ></i>
+            'fa-pause': (playing && currentSong.url === song.url)
+          }"></i>
         </button>
         <div class="z-50 text-left ml-8">
           <!-- Song Info -->
@@ -34,33 +32,29 @@
           <!-- Comment Count -->
           <span class="card-title">
             {{ $tc('song.comment_count', song.comment_count, {
-              count: song.comment_count
-            }) }}
+                count: song.comment_count
+              })
+            }}
           </span>
           <i class="fa fa-comments float-right text-blue-400 text-2xl"></i>
         </div>
         <div class="p-6">
-          <div class="text-white text-center font-bold p-4 mb-4"
-            :class="comment_alert_variant"
+          <div class="text-white text-center font-bold p-4 mb-4" :class="comment_alert_variant"
             v-if="comment_show_alert">
             {{ comment_alert_message }}
           </div>
           <vee-form @submit="addComment" v-if="userLoggedIn">
-            <vee-field as="textarea" name="comment" rules="required|min:3|max:300"
-              class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition
-                duration-500 focus:outline-none focus:border-black rounded mb-2"
-              placeholder="Your comment here..."></vee-field>
-              <ErrorMessage class="text-red-600" name="comment" />
-            <button type="submit"
-              :disabled="comment_in_submission"
-              class="py-1.5 px-3 mt-2 rounded text-white bg-blue-600 block"
-            >
+            <vee-field as="textarea" name="comment" rules="required|min:3|max:300" class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition
+                duration-500 focus:outline-none focus:border-black rounded mb-2" placeholder="Your comment here...">
+            </vee-field>
+            <ErrorMessage class="text-red-600" name="comment" />
+            <button type="submit" :disabled="comment_in_submission"
+              class="py-1.5 px-3 mt-2 rounded text-white bg-blue-600 block">
               Submit
             </button>
           </vee-form>
           <!-- Sort Comments -->
-          <select v-model="sortDir"
-            class="block mt-4 py-1.5 px-3 text-gray-800 border border-gray-300 transition
+          <select v-model="sortDir" class="block mt-4 py-1.5 px-3 text-gray-800 border border-gray-300 transition
             duration-500 focus:outline-none focus:border-black rounded">
             <option value="1">Latest</option>
             <option value="2">Oldest</option>

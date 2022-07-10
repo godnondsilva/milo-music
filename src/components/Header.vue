@@ -4,7 +4,7 @@
     <nav class="container mx-auto flex justify-start items-center py-5 px-4">
       <!-- App Name -->
       <router-link class="text-white font-bold text-2xl mr-4" exact-active-class="no-active" :to="{ name: 'home' }">
-        Vuesic Cloud
+        Volt Music
       </router-link>
 
       <div class="flex flex-grow items-center">

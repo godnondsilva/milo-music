@@ -21,17 +21,17 @@ ProgressBar(router);
 let app;
 
 onAuthStateChanged(auth, () => {
-  if (!app) {
-    app = createApp(App);
+	if (!app) {
+		app = createApp(App);
 
-    app.use(i18n);
-    app.use(store);
-    app.use(router);
-    app.use(VeeValidatePlugin);
-    app.use(GlobalComponents);
+		app.use(i18n);
+		app.use(store);
+		app.use(router);
+		app.use(VeeValidatePlugin);
+		app.use(GlobalComponents);
 
-    app.directive('icon', Icon);
+		app.directive('icon', Icon);
 
-    app.mount('#app');
-  }
+		app.mount('#app');
+	}
 });

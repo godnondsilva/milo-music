@@ -1,5 +1,5 @@
 export default {
-  state: {
-    foo: 'bar',
-  },
+	state: {
+		foo: 'bar',
+	},
 };

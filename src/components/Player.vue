@@ -14,25 +14,20 @@
       </div>
       <!-- Scrub -->
       <div class="float-left w-7 h-7 leading-3 mr-6 mt-2 player-scrub">
-        <div
-          class="absolute left-0 right-0 text-lg text-center text-white mx-auto player-song-info"
-        v-if="currentSong.modified_name">
+        <div class="absolute left-0 right-0 text-lg text-center text-white mx-auto player-song-info"
+          v-if="currentSong.modified_name">
           <span class="song-title">{{ currentSong.modified_name }}</span> -
           <span class="song-artist">{{ currentSong.display_name }}</span>
         </div>
         <!-- Scrub Container  -->
-        <span class="block w-full h-2 rounded m-1 mt-2 bg-gray-200 relative cursor-pointer"
-          @click.prevent="updateSeek">
+        <span class="block w-full h-2 rounded m-1 mt-2 bg-gray-200 relative cursor-pointer" @click.prevent="updateSeek">
           <!-- Player Ball -->
-          <span class="absolute top-neg-10 text-blue-600 text-lg"
-            :style="{ left: `${playerProgress-0.5}%` }">
+          <span class="absolute top-neg-10 text-blue-600 text-lg" :style="{ left: `${playerProgress - 0.5}%` }">
             <i class="fas fa-circle"></i>
           </span>
           <!-- Player Progress Bar-->
-          <span
-            class="block h-2 rounded bg-gradient-to-r from-blue-500 to-blue-400"
-            :style="{ width: `${playerProgress}%` }"
-          ></span>
+          <span class="block h-2 rounded bg-gradient-to-r from-blue-500 to-blue-400"
+            :style="{ width: `${playerProgress}%` }"></span>
         </span>
       </div>
       <!-- Duration -->

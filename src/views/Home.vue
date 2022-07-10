@@ -2,7 +2,8 @@
   <main>
     <!-- Introduction -->
     <section class="py-20 text-white text-center relative">
-      <div class="absolute inset-0 w-full h-full bg-contain introduction-bg" style="background-image: url(assets/img/song-header.png)"></div>
+      <div class="absolute inset-0 w-full h-full bg-contain introduction-bg"
+        style="background-image: url(assets/img/song-header.png)"></div>
       <div class="container mx-auto">
         <div class="text-white main-header-content">
           <h1 class="font-bold text-5xl mb-5">
@@ -30,7 +31,7 @@
           </div>
           <!-- Playlist -->
           <ol id="playlist">
-            <app-song-item v-for="song in songs" :key="song.docID" :song="song"/>
+            <app-song-item v-for="song in songs" :key="song.docID" :song="song" />
           </ol>
           <!-- .. end Playlist -->
         </div>

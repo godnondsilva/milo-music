@@ -8,5 +8,5 @@ import modules from './modules';
 // import player from './modules/player';
 
 export default createStore({
-  modules,
+	modules,
 });
