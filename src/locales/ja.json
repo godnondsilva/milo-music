@@ -9,7 +9,7 @@
 	},
 	"register": {
 		"TOS": "riyō kiyaku",
-		"accept": "Volt Music no {0} ni dōi shimasu."
+		"accept": "Milo Music no {0} ni dōi shimasu."
 	},
 	"song": {
 		"comment_count": "Komento wa arimasen | 1 komento | {count} komento"

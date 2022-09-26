@@ -84,7 +84,7 @@ export default {
         age: 'required|min_value:18|max_value:150',
         password: 'required|min:3|max:32',
         confirm_password: 'required|passwords_mismatch:@password',
-        country: 'country_excluded:India',
+        country: 'country_excluded:Mexico',
         tos: 'tos',
       },
       // Static user data

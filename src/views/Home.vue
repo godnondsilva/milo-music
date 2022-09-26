@@ -1,7 +1,7 @@
 <template>
   <main>
     <!-- Introduction -->
-    <section class="py-20 text-white text-center relative">
+    <section class="py-40 text-white text-center relative">
       <div class="absolute inset-0 w-full h-full bg-contain introduction-bg"
         style="background-image: url(assets/img/song-header.png)"></div>
       <div class="container mx-auto">
@@ -14,8 +14,6 @@
           </p>
         </div>
       </div>
-
-      <img class="relative block mx-auto mt-5 -mb-20 w-auto max-w-full" src="assets/img/introduction-music.png" />
     </section>
 
     <!-- Main Content -->

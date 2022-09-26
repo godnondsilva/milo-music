@@ -21,7 +21,7 @@
           <!-- Song Info -->
           <div class="text-3xl font-bold">{{ song.modified_name }}</div>
           <div>{{ song.genre }}</div>
-          <div class="song-price">{{ $n(4.99, 'currency') }}</div>
+          <div class="song-artist">Artist: {{ song.display_name }}</div>
         </div>
       </div>
     </section>
@@ -32,8 +32,8 @@
           <!-- Comment Count -->
           <span class="card-title">
             {{ $tc('song.comment_count', song.comment_count, {
-                count: song.comment_count
-              })
+            count: song.comment_count
+            })
             }}
           </span>
           <i class="fa fa-comments float-right text-blue-400 text-2xl"></i>

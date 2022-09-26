@@ -30,9 +30,9 @@
           <ErrorMessage class="text-red-600" name="genre" />
         </div>
         <button :disabled="in_submission" type="submit"
-          class="py-1.5 px-3 rounded text-white bg-green-600">Submit</button>
+          class="py-1.5 px-3 mr-2 rounded text-white bg-green-600">Save</button>
         <button :disabled="in_submission" @click.prevent="showForm = false" type="button"
-          class="py-1.5 px-3 rounded text-white bg-gray-600">Go Back</button>
+          class="py-1.5 px-3 rounded text-white bg-red-400">Close</button>
       </vee-form>
     </div>
   </div>

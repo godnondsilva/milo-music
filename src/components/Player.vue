@@ -1,6 +1,6 @@
 <template>
   <!-- Player -->
-  <div class="fixed bottom-0 left-0 bg-black p-5 pb-4 text-left align-top w-full h-18">
+  <div class="fixed bottom-0 left-0 bg-black p-6 pb-2 text-left align-top w-full h-18">
     <div class="relative">
       <!-- Play/Pause Button -->
       <div class="float-left w-7 h-7 mt-1 leading-3">
@@ -20,7 +20,7 @@
           <span class="song-artist">{{ currentSong.display_name }}</span>
         </div>
         <!-- Scrub Container  -->
-        <span class="block w-full h-2 rounded m-1 mt-2 bg-gray-200 relative cursor-pointer" @click.prevent="updateSeek">
+        <span class="block w-full h-2 rounded m-1 mt-2 bg-gray-400 relative cursor-pointer" @click.prevent="updateSeek">
           <!-- Player Ball -->
           <span class="absolute top-neg-10 text-blue-600 text-lg" :style="{ left: `${playerProgress - 0.5}%` }">
             <i class="fas fa-circle"></i>

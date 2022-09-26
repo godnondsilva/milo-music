@@ -11,10 +11,10 @@ module.exports = {
 		},
 	},
 	pwa: {
-		name: 'Volt Music',
+		name: 'Milo Music',
 		themeColor: '#3b82f6',
 		manifestOptions: {
-			short_name: 'Volt Music',
+			short_name: 'Milo Music',
 		},
 	},
 };

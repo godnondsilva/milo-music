@@ -7,13 +7,13 @@ import { getStorage } from 'firebase/storage';
 import { getAnalytics } from 'firebase/analytics';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyA-IQBAAFb9tKFQ028xxWWfiBpu022lJjE',
-  authDomain: 'vuesic-cloud.firebaseapp.com',
-  projectId: 'vuesic-cloud',
-  storageBucket: 'vuesic-cloud.appspot.com',
-  messagingSenderId: '1089713789184',
-  appId: '1:1089713789184:web:b1aac3b758bd29d9493be5',
-  measurementId: 'G-4PKYRSPQY5',
+  apiKey: 'AIzaSyDNjmZaRJMNft13E6DZzpiWcerE3sOhZ1o',
+  authDomain: 'milo-music.firebaseapp.com',
+  projectId: 'milo-music',
+  storageBucket: 'milo-music.appspot.com',
+  messagingSenderId: '340263517417',
+  appId: '1:340263517417:web:93f9d2a4440a3d70d4c478',
+  measurementId: 'G-LGPB87L4RX',
 };
 
 // Names of the collections in the firebase bucket

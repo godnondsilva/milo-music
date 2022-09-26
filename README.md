@@ -1,4 +1,4 @@
-# Volt Music
+# Milo Music
 
 ## Project setup
 
